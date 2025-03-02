@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập</title>
+</head>
+            <h2>BÀI TẬP</h2>
+            <ul>
+                <li>Trang chủ</li>
+                <li>Giới thiệu
+                    <ul>
+                        <li>Lịch sử phát triển</li>
+                        <li>Hệ thống chi nhánh</li>
+                        <li>Hình thức thanh toán</li>
+                    </ul>
+                </li>
+                <li>Liên hệ</li>
+                <li>Góp ý</li>
+                <li>Danh sách sản phẩm</li>
+                <li>Giỏ hàng</li>
+                <li>Đăng nhập</li>
+                <li>Đăng ký</li>
+            </ul>
+            <ol>
+                <li><strong>Quá trình hình thành</strong>
+                    <ul type="square">
+                        <li>Từ tháng 01/2012 đến 03/2012: Quá trình hoàn thiện hệ thống cửa hàng</li>
+                        <li>Tháng 03/2012: Chính thức khai trương website</li>
+                    </ul>
+                </li>
+                <li><strong>Đội ngũ nhân sự</strong>
+                    <ul type="square">
+                        <li>Phòng kiểm soát nội bộ</li>
+                        <li>Khối tài chính</li>
+                        <li>Khối hành chính nhân sự</li>
+                    </ul>
+                </li>
+            </ol>
+</body>
+<body>
+    <h1>PHIẾU KHẢO SÁT</h1>
+        <fieldset>
+            <form action="" method="post">
+                <div>
+                    <label for="ho_ten">Họ tên</label> 
+                    <input type="text" id="ho_ten" name="ho_ten">
+                </div>
+                <div>
+                    <label for="mau_yeu_thich">Màu yêu thích</label>
+                    <input type="color" id="mau_yeu_thich" name="mau_yeu_thich">
+                </div>
+                <div>
+                    <label for="ngay_sinh">Ngày sinh</label>
+                    <input type="date" id="ngay_sinh" name="ngay_sinh">
+                </div>
+                <div>
+                    <lable for="email">Email</lable>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div>
+                    <label for="nganh_nghe">Ngành nghề</label>
+                    <input type="text" id="nganh_nghe" name="nganh_nghe">
+                </div>
+                <div>
+                    <label for="website">Website</label>
+                    <input type="url" id="website" name="website">
+                </div>
+                <div>
+                    <label for="con_so_yeu_thich">Con số yêu thích(1-9)</label>
+                    <input type="number" id="con_so_yeu_thich" name="con_so_yeu_thich" min="1" max="9">
+                </div>
+                <div>
+                    <label for="thu_nhap">Thu nhập</label>
+                    100(USD) <input type="range" id="thu_nhap" name="thu_nhap" min="100" max="1000" step="10" oninput="updateValue()"> 1000(USD)
+                    <br>
+                    Tỉ giá <input type="number" id="exchange_rate" value="22500" readonly> = 
+                    <input type="number" id="thu_nhap_value" readonly>
+
+                    <script>
+                    function updateValue() {
+                    let income = document.getElementById("thu_nhap").value;
+                    let rate = document.getElementById("exchange_rate").value;
+                    document.getElementById("thu_nhap_value").value = income * rate;
+                    }
+                    </script>
+
+                </div>
+                <input type="submit" value="Gửi đi">
+                <input type="reset" value="Xóa hết">
+            </form>
+            </fieldset>
+</body>
+<body>
+    <TABLE border="1" BORDER CELLSPACING="0" width="100%">
+        <tr BGCOLOR="#FFCC99">
+            <th HEIGHT ="70PX" colspan="8">HEADER</th>
+        </tr>
+        <TR BGCOLOR="#99CCFF">
+            <th colspan="8">MENU NGANG</th>
+        </TR>
+        <TR>
+            <th bgcolor="#CCFFCC" rowspan="2">SIDEBAR</th>
+            <TH bgcolor="#FFCCC" HEIGHT="150PX" colspan="6">SLIDER</TH>
+        </TR>
+        <TR BGCOLOR="#9999cc">
+            <th WIDTH="300PX" HEIGHT="200PX" colspan="3">SẢN PHẨM NỔI BẬT 1</th>
+            <th WIDTH="300PX" colspan="3">SẢN PHẨM NỔI BẬT 2</th>
+        </TR>
+        <TR HEIGHT="90PX">
+            <TH BGCOLOR="#FFCC99">THÔNG TIN CÔNG TY</TH>
+            <TH BGCOLOR="#FFFF00" colspan="2">Các đường link<BR>FOOTER 1</TH>
+            <TH BGCOLOR="#FFFF00" colspan="2">Các đường link<BR>FOOTER 2</TH>
+            <TH BGCOLOR="#FFFF00" colspan="2">Các đường link<BR>FOOTER 3</TH>
+        </TR>
+    </TABLE>
+</body>
+<body>
+    <h1>PHIẾU KHẢO SÁT</h1>
+        <fieldset>
+            <form action="" method="post">
+                <div>
+                    <label for="ho_ten">Họ tên</label> 
+                    <input type="text" id="ho_ten" name="ho_ten">
+                </div>
+                <div>
+                    <label for="mau_yeu_thich">Màu yêu thích</label>
+                    <input type="color" id="mau_yeu_thich" name="mau_yeu_thich">
+                </div>
+                <div>
+                    <label for="ngay_sinh">Ngày sinh</label>
+                    <input type="date" id="ngay_sinh" name="ngay_sinh">
+                </div>
+                <div>
+                    <lable for="email">Email</lable>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div>
+                    <label for="nganh_nghe">Ngành nghề</label>
+                    <input type="text" id="nganh_nghe" name="nganh_nghe">
+                </div>
+                <div>
+                    <label for="website">Website</label>
+                    <input type="url" id="website" name="website">
+                </div>
+                <div>
+                    <label for="con_so_yeu_thich">Con số yêu thích(1-9)</label>
+                    <input type="number" id="con_so_yeu_thich" name="con_so_yeu_thich" min="1" max="9">
+                </div>
+                <div>
+                    <label for="thu_nhap">Thu nhập</label>
+                    100(USD) <input type="range" id="thu_nhap" name="thu_nhap" min="100" max="1000" step="10" oninput="updateValue()"> 1000(USD)
+                    <br>
+                    Tỉ giá <input type="number" id="exchange_rate" value="22500" readonly> = 
+                    <input type="number" id="thu_nhap_value" readonly>
+
+                    <script>
+                    function updateValue() {
+                    let income = document.getElementById("thu_nhap").value;
+                    let rate = document.getElementById("exchange_rate").value;
+                    document.getElementById("thu_nhap_value").value = income * rate;
+                    }
+                    </script>
+
+                </div>
+                <input type="submit" value="Gửi đi">
+                <input type="reset" value="Xóa hết">
+            </form>
+            </fieldset>
+</body>
+</html>
